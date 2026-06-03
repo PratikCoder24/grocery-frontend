@@ -70,7 +70,7 @@ const DashboardPage = () => {
                         <div className="flex justify-between items-center">
                             <div>
                                 <p className="text-gray-400 text-sm">
-                                    Purchases
+                                    Pratik Purchases
                                 </p>
                                 <h2 className="text-2xl font-bold mt-2">
                                     ₹{stats.purchase.toLocaleString()}
