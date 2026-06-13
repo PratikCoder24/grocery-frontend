@@ -1,16 +1,47 @@
-# React + Vite
+# Grocery Store Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack application built for grocery shop owners to manage inventory, purchases, suppliers, and sales operations efficiently.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Frontend
 
-## React Compiler
+* React
+* Javascript
+* Vite
+* Axios
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend
 
-## Expanding the ESLint configuration
+* Java
+* Spring Boot
+* Spring Data JPA
+* MySQL
+* Gradle
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+* Inventory management
+* Product management
+* Category management
+* Supplier management
+* Purchase tracking
+* Sales management
+* Automatic stock updates on purchases and sales
+* Bill/receipt generation during sales
+* Monthly sales analytics and graphs
+* REST API-based architecture
+* Database-driven record management
+
+## Configuration
+
+Database credentials are managed using environment variables.
+
+## Port
+
+Backend runs on port 9000.
+
+## Purpose
+
+The system helps grocery store owners track inventory levels, manage suppliers, record purchases, generate customer bills, monitor sales performance, and gain insights through monthly sales analytics.
+
