@@ -4,3 +4,4 @@ export { default as inventoryReducer } from './inventory/InventorySlice';
 export { default as saleReducer } from "./sale/SaleSlice";
 export { default as supplierReducer } from "./supplier/SupplierSlice"
 export { default as purchaseReducer } from "./purchase/PurchaseSlice" 
+export { default as authReducer } from "./auth/AuthSlice"

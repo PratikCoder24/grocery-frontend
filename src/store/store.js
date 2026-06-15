@@ -6,6 +6,7 @@ import {
     saleReducer,
     supplierReducer,
     purchaseReducer,
+    authReducer,
 
 } from '../features/index.js';
 
@@ -18,5 +19,6 @@ export const Store = configureStore({
         sale : saleReducer,
         supplier : supplierReducer,
         purchase : purchaseReducer,
+        auth : authReducer,
     },
 });
