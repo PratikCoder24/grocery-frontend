@@ -42,7 +42,7 @@ const saleSlice = createSlice({
                 state.error = null
             }
          })
-         .addCase(createSale.rejected, (state,error) => {
+         .addCase(createSale.rejected, (state,action) => {
             state.isLoading = false;
             state.error = action.payload
          })
@@ -56,7 +56,7 @@ const saleSlice = createSlice({
                 state.error = null
             
          })
-         .addCase(fetchAllSale.rejected, (state,error) => {
+         .addCase(fetchAllSale.rejected, (state,action) => {
             state.isLoading = false;
             state.error = action.payload
          })

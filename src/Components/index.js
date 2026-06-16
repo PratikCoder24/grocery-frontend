@@ -9,6 +9,9 @@ import SupplierForm from "./supplier/SupplierForm";
 import SupplierList from "./supplier/SupplierLists";
 import PurchaseForm from "./purchase/PurchaseForm";
 import PurchaseLists from "./purchase/PurchaseLists";
+import RegisterComponent from "./auth/RegisterComponent";
+import LoginComponent from "./auth/LoginComponent";
+import DashboardComponent from "./DashboardComponent";
 
 export {
     CategoryForm,
@@ -21,5 +24,9 @@ export {
     SupplierForm,
     SupplierList,
     PurchaseForm,
-    PurchaseLists
+    PurchaseLists,
+    LoginComponent,
+    RegisterComponent,
+    DashboardComponent
+
 }

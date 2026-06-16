@@ -15,6 +15,7 @@ const getInitialUser = () => {
 
     return {email:payload.sub , role:payload.role};
     }catch(error){
+        localStorage.removeItem("token")
         return error;
     }
 }
