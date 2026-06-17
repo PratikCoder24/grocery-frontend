@@ -75,6 +75,62 @@ export const deleteToast = (message, onConfirm) => {
         }
     );
 };
+export const promoteToast = (message, onConfirm) => {
+
+    toast.info(
+        ({ closeToast }) => (
+
+            <div className="flex flex-col gap-4">
+
+                <p className="text-sm">
+                    {message}
+                </p>
+
+                <div className="flex justify-end gap-2">
+
+                    <button
+                        onClick={() => {
+                            onConfirm();
+                            closeToast();
+                        }}
+                        className="
+                            bg-red-600
+                            hover:bg-red-700
+                            text-white
+                            px-3
+                            py-1
+                            rounded-md
+                            text-sm
+                        "
+                    >
+                        Promote
+                    </button>
+
+                    <button
+                        onClick={closeToast}
+                        className="
+                            bg-gray-600
+                            hover:bg-gray-700
+                            text-white
+                            px-3
+                            py-1
+                            rounded-md
+                            text-sm
+                        "
+                    >
+                        Cancel
+                    </button>
+
+                </div>
+
+            </div>
+        ),
+        {
+            autoClose: false,
+            closeOnClick: false,
+        }
+    );
+};
 export const signOutToast = (message, onConfirm) => {
 
     toast.info(

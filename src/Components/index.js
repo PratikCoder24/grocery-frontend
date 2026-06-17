@@ -11,7 +11,8 @@ import PurchaseForm from "./purchase/PurchaseForm";
 import PurchaseLists from "./purchase/PurchaseLists";
 import RegisterComponent from "./auth/RegisterComponent";
 import LoginComponent from "./auth/LoginComponent";
-import DashboardComponent from "./DashboardComponent";
+import DashboardComponent from "./dashboard/DashboardComponent";
+import UserLists from "./user/UserLists";
 
 export {
     CategoryForm,
@@ -27,6 +28,7 @@ export {
     PurchaseLists,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    UserLists
 
 }

@@ -9,9 +9,10 @@ import PurchasePage from './Pages/PurchasePage';
 import Dashboard from './Pages/DashboardPage';
 import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
-import Layout from './Components/Layout';
+import Layout from './Components/dashboard/Layout';
 import Toast from './toast/Toast';
 import ProtectedRoute from './routes/ProtectedRoute';
+import UserPage from './Pages/UserPage';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
                 <Route path="/products" element={<ProductPage />} />
                 <Route path='/supplier' element={<SupplierPage />} />
                 <Route path='/purchase' element={<PurchasePage />} />
+                <Route path='/users' element={<UserPage/>} />
               </Route>
 
             </Route>

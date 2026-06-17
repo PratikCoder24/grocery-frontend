@@ -1,10 +1,9 @@
-// src/Components/Layout/Layout.jsx
 import React, { useState, useEffect } from "react";
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../features/auth/AuthSlice";
-import { Menu, X, LogOut, LayoutDashboard, Layers, Box, ClipboardList, ShoppingBag, Truck, DollarSign } from "lucide-react";
-import { signOutToast } from "../toast/Toast";
+import { logout } from "../../features/auth/AuthSlice";
+import { Menu, X, LogOut, LayoutDashboard, Layers, Box, ClipboardList, ShoppingBag, Truck, DollarSign , Users } from "lucide-react";
+import { signOutToast } from "../../toast/Toast";
 
 const Layout = () => {
     const [open, setOpen] = useState(false);
@@ -95,6 +94,10 @@ const Layout = () => {
                                         <Link to="/purchase" className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-800 text-slate-300 hover:text-white transition text-sm">
                                             <DollarSign size={18} className="text-emerald-400" />
                                             <span>Supply Purchases</span>
+                                        </Link>
+                                        <Link to="/users" className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-800 text-slate-300 hover:text-white transition text-sm">
+                                            <Users size={18} className="text-emerald-400" />
+                                            <span>Manage Users</span>
                                         </Link>
                                     </>
                                 )}

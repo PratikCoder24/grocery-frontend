@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import axiosInstance from "../axios/axiosInstance";
-import { SaleLists } from "../Components/index.js";
+import axiosInstance from "../../axios/axiosInstance.js";
+import { SaleLists } from "../index.js";
 import {
     ResponsiveContainer,
     BarChart,
